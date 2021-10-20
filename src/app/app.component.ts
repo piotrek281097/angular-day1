@@ -151,6 +151,7 @@ export class AppComponent {
   }
   helloWorld() {
     const text = 'hello world!';
+    console.log("hello");
     from(text.split(''))
     .pipe(
       filter((val) => !!val.trim()), //usuwa spacje
